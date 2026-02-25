@@ -3,7 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 //importo le icon
 import { faPaw } from "@fortawesome/free-solid-svg-icons"
-function MovieReview() {
+function MovieReview(props) {
+        const {name,vote,text} = props.reviewProp;
 
 
     return (
@@ -11,10 +12,10 @@ function MovieReview() {
             <div className="card mb-4">
                 <div className="card-body">
                     <p className="card-text">
-                        testo della review
+                        {text}
                     </p>
-                    <strong><FontAwesomeIcon icon={faPaw} /> : 5/5</strong>
-                    <address><i>By review Author</i></address>
+                    <strong><FontAwesomeIcon icon={faPaw} /> : {vote}</strong>
+                    <address><i>By {name}</i></address>
                 </div>
             </div>
 
