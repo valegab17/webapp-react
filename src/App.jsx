@@ -1,12 +1,12 @@
 import { useState } from 'react'
-import './App.css'
 
 function App() {
 
 
   return (
     <>
-     
+     <h1>Sono la tua homepage</h1>
+    
     </>
   )
 }
