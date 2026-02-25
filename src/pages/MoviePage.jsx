@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
-
+//import component lista reviews
+import MovieReview from "../components/MovieReview"
 function MoviePage() {
 
 
@@ -15,8 +16,11 @@ function MoviePage() {
             <h4>Our community reviews</h4>
         </header>
     {/* Qui ci andranno le recensioni */}
+    <MovieReview/>
+    <MovieReview/>
+    <MovieReview/>
 
-    
+
         </section>
         <footer className="border-top border-1 pt-2 mb-3 d-flex justify-content-end">
             <Link to="/" className="btn btn-primary"> Back to Homepage</Link>
