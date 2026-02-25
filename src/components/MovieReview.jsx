@@ -9,13 +9,13 @@ function MovieReview() {
     return (
         <>
             <div className="card mb-4">
-            <div className="card-body">
-                <p className="card-text">
-                    testo della review
-                </p>
-                <strong><FontAwesomeIcon icon={faPaw} /> : 5/5</strong>
-                <address><i>By review Author</i></address>
-            </div>
+                <div className="card-body">
+                    <p className="card-text">
+                        testo della review
+                    </p>
+                    <strong><FontAwesomeIcon icon={faPaw} /> : 5/5</strong>
+                    <address><i>By review Author</i></address>
+                </div>
             </div>
 
 
