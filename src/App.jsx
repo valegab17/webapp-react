@@ -1,12 +1,28 @@
 import { useState } from 'react'
+//importo fontawesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+//importo le mie pagine
+import HomePage from './pages/HomePage'
+import MoviePage from './pages/MoviePage'
 
+//importo il layout
+import DefaultLayout from './layouts/DefaultLayout'
+//importo comp rotte
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 function App() {
 
 
   return (
     <>
-     <h1>Sono la tua homepage</h1>
-    
+      <BrowserRouter>
+        <Routes>
+          <Route element={<DefaultLayout />}>
+            <Route index element={<HomePage />} />
+            <Route path="/movies/:id" element={<MoviePage />} />
+          </Route>
+
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
