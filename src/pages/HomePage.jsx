@@ -1,7 +1,7 @@
 //mi importo axios
 import axios from "axios"
 //mi importo useState e useEffect
-import { useState, useEffect, use } from "react"
+import { useState, useEffect } from "react"
 
 //mi importo la movie card per visualizzare la lista di film
 import MovieCard from "../components/MovieCard"

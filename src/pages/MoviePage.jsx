@@ -2,7 +2,7 @@
 import axios from "axios"
 //import state ed effect
 import { useState, useEffect } from "react"
-import { Link, useParams } from "react-router-dom"
+import { Link, useParams, useNavigate} from "react-router-dom"
 
 //import component lista reviews
 import MovieReview from "../components/MovieReview"
@@ -16,7 +16,8 @@ const endpoint = "http://localhost:3000/api/movies/";
 function MoviePage() {
     //prendo il film da url rotta
     const {id} = useParams();
-
+//creo istanza del navigate per poterlo usare
+const redirect = useNavigate();
 //setto la variabile di stato per il film
 const [movie, setMovie] = useState({});
     //funzione per gestire chiamata alla rotta show di BE
@@ -25,6 +26,7 @@ const [movie, setMovie] = useState({});
         .then(res=>{setMovie(res.data);})
         .catch(err =>{
             console.log(err);
+            if(err.satus = 404) redirect('/404');
         })
     }
     //richiamo fetch
