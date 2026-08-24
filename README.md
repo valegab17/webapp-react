@@ -1,16 +1,37 @@
-# React + Vite
+# 🎬 Boovies / Movie App (Cats Edition 🐈‍⬛)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Un'applicazione Web **Full-Stack** per la consultazione e la gestione di recensioni cinematografiche, caratterizzata da un layout responsive in stile piattaforma streaming e schede film personalizzate.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Backend-Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Framework-Express-000000?style=for-the-badge&logo=express&logoColor=white)
+![MySQL](https://img.shields.io/badge/Database-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/UI-Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Caratteristiche Principali
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **HomePage dinamica**: Rendering responsive delle schede film in una griglia ordinata.
+- **Dettagli Film & Recensioni**: Pagina dedicata al singolo film con dettagli, valutazione media e elenco recensioni.
+- **API RESTful**: Backend sviluppato in Node.js/Express per la gestione di rotte, risorse statiche e query al database.
+- **Database Relazionale**: Struttura dati normalizzata su MySQL (film, recensioni).
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+### Frontend
+
+- **React.js** (Vite / CRA)
+- **React Router DOM** (Gestione della navigazione client-side)
+- **Axios** (Chiamate HTTP verso il server Express)
+- **Bootstrap 5 / HTML5 / CSS3** (Layout responsive e styling)
+
+### Backend
+
+- **Node.js** & **Express.js**
+- **MySQL2** (Driver per la connessione al database)
+- **CORS & Middleware** (Gestione delle risorse statiche e sicurezza delle chiamate)
+
+---

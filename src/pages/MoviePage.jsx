@@ -51,7 +51,7 @@ function MoviePage() {
                     style={{ width: '60%', height: 'auto' }}
                 />
                 <h1>{movie.title}</h1>
-                <h3 className="text-muted"><i>{movie.director}</i></h3>
+                <h3 className="text-white"><i>{movie.director}</i></h3>
                 <p>{movie.abstract}</p>
             </header>
             <section id="reviews">
