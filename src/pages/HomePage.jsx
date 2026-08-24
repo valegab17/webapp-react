@@ -14,25 +14,25 @@ function HomePage() {
     const [movies, setMovies] = useState([]);
 
     //funzione per gestire chiamata alla rotta index di BE
-    const fetchMovies = () =>{
+    const fetchMovies = () => {
         axios.get(endpoint)
-        .then(res=>{setMovies(res.data);})
-        .catch(err =>{
-            console.log(err);
-        })
+            .then(res => { setMovies(res.data); })
+            .catch(err => {
+                console.log(err);
+            })
     }
     //funzione rendering listato
     const renderMovies = () => {
         return movies.map(movie => {
             return (
-                <div className="col" key={movie.id}>
+                <div className="col-12 col-md-6 col-lg-4 mb-4 d-flex align-items-stretch" key={movie.id}>
                     <MovieCard movieProp={movie} />
                 </div>
             )
         })
     }
     //richiamo la funzione di fetch
-    useEffect(fetchMovies,[]);
+    useEffect(fetchMovies, []);
     return (
         <>
 
