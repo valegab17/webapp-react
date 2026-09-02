@@ -1,4 +1,4 @@
-# 🐈‍⬛ Boovies (Movie App - Cats Edition)
+# 🐈‍⬛ Boovies (Movie App - Cats Version)
 
 Web app Full-Stack per cercare film e gestire recensioni cinematografiche, con un'interfaccia responsive in stile piattaforma streaming.
 
@@ -11,4 +11,4 @@ Web app Full-Stack per cercare film e gestire recensioni cinematografiche, con u
 ## 🛠️ Tech Stack
 
 **Frontend:** React, React Router, Axios, Bootstrap 5  
-**Backend:** Node.js, Express, MySQL2, CORS
+**Backend:** Node.js, Express, MySQL, CORS
